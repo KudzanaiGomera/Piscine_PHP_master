@@ -1,57 +1,118 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    responsive.css                                     :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: kgomera <marvin@42.fr>                     +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/10/08 08:30:41 by kgomera           #+#    #+#              #
+#    Updated: 2019/10/08 14:09:01 by kgomera          ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
 
-		body
-		{
-			width: 100%;
-			background-image: url(https://cdn.britannica.com/63/194763-050-891EAC31/Dmitri-Mendeleev-oil-canvas-Ivan-Kramskoi-1878.jpg);
-			background-size: 150%;
-		}
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color: grey;
+}
 
-		p {
-			font-size: 10px;
-			margin: 0;
-		}
+p {
+	font-size: 10px;
+	margin: 0;
+}
 
-		h1
-		{
-			text-align: center;
-		}	
-		#periodic_table
-		{
-			width: 100%;
-			min-width: 600px;
-		}
+h1
+{
+	text-align: center;
+}
 
-		#periodic_table >div
-		{
-			margin-bottom: 2.5%;
-		}
 
-		#periodic_table > div > div
-		{
-			width: 5.5%;
-			display: inline-block;
-			margin-right: -7px;
-		}
+h1
+{
+	text-align: center;
+	color: black;
+}	 
+#periodic_table
+{
+	width: 100%;
+	min-width: 600px;
+}
 
-		#periodic_table >div > div > div 
-		{
-			border: 3px solid black;
-			border-collapse: collapse;
-			width: 100%;
-			-webkit-box-sizing: border-box;
-			-moz-box-sizing:border-box;
-			box-sizing: border-box;
-			text-align: center;
-			background: red;
-			margin-top: -3px;
-			padding: 20% 0;
-		}
+#periodic_table >div
+{
+	margin-bottom: 2.5%;
+	margin-left: 5%;
+}
 
-		h1
-		{
-			font-size: 2vw;
-			color: #000000;
-			text-align: center;
-			margin: 0;
-		}
-		
+#periodic_table > div > div
+{
+	width: 5.5%;
+	display: inline-block;
+	margin-right: -7px;
+
+}
+
+#periodic_table >div > div > div 
+{
+	border: 3px solid black;
+	border-collapse: collapse;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+	text-align: center;
+	background: red;
+	margin-top: -3px;
+	padding: 10% 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+p
+{
+	text-align: left;
+	margin-bottom: -10%;
+}
+
+div h2
+{
+	text-align: right;
+	font-size: small;
+	margin-top: -10%;
+
+}
+
+
+h1
+{
+	font-size: 2vw;
+	color: #000000;
+	text-align: center;
+	margin: 0;
+}
+
+.lowerpart
+{
+	margin-left: 21%;
+}
+
+.container
+{
+	margin-left: -1%;
+	display: block;
+	width: 80%;
+}
+
+img
+{
+	width: 400px;
+	height: 400px;
+	padding: 10px;
+
+}
+
+.image
+{
+	text-align: center;
+
+}
