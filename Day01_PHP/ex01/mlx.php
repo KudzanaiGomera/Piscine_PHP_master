@@ -1,10 +1,10 @@
 #!/usr/bin/env php
 <?php
-	$i = 0;
-	while($i < 1000)
-	{
-		echo ("X");
-		$i++;
-	}
+for($i = 0; $i < 1000; $i++)
+{
+	if($i == 100)
+		break;
+	echo ("X");
+}
 	echo "\n";
 ?>
