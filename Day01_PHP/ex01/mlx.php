@@ -6,5 +6,5 @@ for($i = 0; $i < 1000; $i++)
 		break;
 	echo ("X");
 }
-	echo "\n";
+echo "\n";
 ?>
