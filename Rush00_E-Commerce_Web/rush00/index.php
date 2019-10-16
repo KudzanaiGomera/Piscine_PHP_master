@@ -104,11 +104,12 @@
                                     echo "<li><a href=\"index.php?page=logout\">LogOut</a></li>";
                                 }
                             ?>
-                            <li><a href="home.html?page=home">Home</a></li>
+                            <li><a href="index.php?page=home">Home</a></li>
                             <li><a href="index.php?page=contact">Contact</a></li>
                     </ul>
                 </div>
             </nav>
+            
             <div class="container">
                 <?php include $page; ?>
             </div>

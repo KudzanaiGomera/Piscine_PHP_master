@@ -36,7 +36,7 @@ $query = mysqli_query($link, "CREATE TABLE IF NOT EXISTS `users` (
 
 
 
-$query = mysqli_query($link, "INSERT INTO rush00.items (`name`, `type`, `typeof`, `description`, `price`, `img`) VALUES ()");
+$query = mysqli_query($link, "INSERT INTO rush00.items (`name`, `type`, `typeof`, `description`, `price`, `img`) VALUES ('Shoe','Airforce', 'shoes', 'this shoe is an Airforce', 'R750', 'image/airforce.jpeg')");
 
 
 $query = mysqli_query($link, "INSERT INTO rush00.items (`name`, `type`, `typeof`, `description`, `price`, `img`) VALUES ()");
