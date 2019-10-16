@@ -1,0 +1,47 @@
+body
+{
+	background-color: #ffffff
+    margin: 0;
+    background-size: 10px 10px;
+}
+
+nav ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav a{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+}
+
+#navbar
+{
+	background-color: grey;
+
+}
+
+#text
+{
+	color: white;
+}
+
+.submenu li a:hover {color: #9ACD32;}
+
+/*--------------------Footer-------------*/
+#footer
+{
+    background: #333;
+    color: #fff;
+    padding: 12px;
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding-bottom: 0;
+    text-align: center;
+    text-decoration: none;
+}

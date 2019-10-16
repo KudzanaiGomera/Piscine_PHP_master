@@ -1,0 +1,81 @@
+
+
+.contact-area span
+{
+    display: block;
+    color: #3a3a3a;
+    font-size: 12px;
+    line-height: normal;
+    letter-spacing: 0.025em;
+}
+
+.contact-area ul li
+{
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+
+.contact-area ul li:last-child
+{
+    float: left;
+    margin-bottom: 0;
+}
+
+.contact-address ul li .fa
+{
+    float: left;
+    width: 25px;
+    color: deepskyblue;
+    font-size: 30px;
+}
+
+
+.contact-address ul li .address-phone
+{
+    float: left;
+    width: 180px;
+    padding-left: 25px;
+    
+}
+
+
+
+.contact-block
+{
+    padding-left: 25px;
+}
+
+
+
+.contact-area .form-control, .contact-area textarea
+{
+    font-family: 'Roboto', sans-serif;
+    background:#f8fdff;
+    border: 1px solid #a5d3eb;
+    padding: 10px 12px;
+    color: #bdbdbd;
+    height: 45px;
+    font-weight: 400px;
+    border-radius: 0;
+}
+
+
+
+.contact-area .form-group
+{
+    margin-bottom: 30px;
+}
+
+
+.contact-area textarea
+{
+    min-height: 115px;
+}
+
+
+.contact-area .deafult-btn
+{
+    padding: 10px;
+    
+}
