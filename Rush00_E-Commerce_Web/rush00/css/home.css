@@ -1,32 +1,21 @@
-.products
+img
 {
-    margin-right: -1px;
-    display: table;
-    
+  max-width: 60px;
+   max-height: 60px;
+}
+#images
+{
+   padding:10px;
+  
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 300px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
-  float: left;
-  padding-right: 15px;
-}
-
-.btn {
-  border: none;
-  outline: 0;
-  padding: 12px;
-  color: white;
-  background-color: #000;
-  text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
-}
-
-.card button:hover {
-  opacity: 0.7;
+#block
+{
+   display: inline-block;
+   
+   width: 33,33%;
+   float: left;
+   padding-left: -2px;
+   padding: 5px;
+   margin-left: -2px;
 }

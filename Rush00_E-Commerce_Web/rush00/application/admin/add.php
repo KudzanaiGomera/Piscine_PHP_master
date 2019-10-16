@@ -8,7 +8,7 @@
             $price = (int)$_POST['price'];
             $img = $_POST['img'];
 
-            $link = mysqli_connect("localhost", "root", "123456789", "rush00");
+            $link = mysqli_connect("localhost", "root", "81483465law", "rush00");
 
             if (mysqli_connect_errno()) {
                 printf("Connect failed: %s\n", mysqli_connect_error());

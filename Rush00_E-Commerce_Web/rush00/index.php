@@ -2,7 +2,7 @@
     session_start();
     $order = 0;
     if (!isset($_GET['page']) || $_GET['page'] == "home") {
-        $page = "application/views/home.html";
+        $page = "application/views/home.php";
     }
     if ($_GET['page'] == "contact") {
         $page = "application/views/contact.html";
@@ -37,7 +37,7 @@
         $login = $_SESSION['loggued_on_user'];
     }
 
-    $link = mysqli_connect("localhost", "root", "123456789", "rush00");
+    $link = mysqli_connect("localhost", "root", "81483465law", "rush00");
 
     if (mysqli_connect_errno()) {
         try {

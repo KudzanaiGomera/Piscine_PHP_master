@@ -1,7 +1,7 @@
 <?php
     if (isset($_POST['submit'])) {
         if ($_POST['submit'] == "Modify") {
-            $link = mysqli_connect("localhost", "root", "123456789", "rush00");
+            $link = mysqli_connect("localhost", "root", "81483465law", "rush00");
 
             if (mysqli_connect_errno()) {
                 printf("Connect failed: %s\n", mysqli_connect_error());
@@ -30,7 +30,7 @@
 
     if (isset($_POST['delete'])) {
         if ($_POST['delete'] == "Delete Account") {
-            $link = mysqli_connect("localhost", "root", "123456789", "rush00");
+            $link = mysqli_connect("localhost", "root", "81483465law", "rush00");
 
             if (mysqli_connect_errno()) {
                 printf("Connect failed: %s\n", mysqli_connect_error());

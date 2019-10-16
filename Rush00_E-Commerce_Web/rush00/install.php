@@ -1,9 +1,9 @@
 <?php
-$link = mysqli_connect("localhost", "root", "123456789");
+$link = mysqli_connect("localhost", "root", "81483465law");
 
 $query = mysqli_query($link, "CREATE DATABASE IF NOT EXISTS rush00");
 
-$link = mysqli_connect("localhost", "root", "123456789", "rush00");
+$link = mysqli_connect("localhost", "root", "81483465law", "rush00");
 
 $queryItems = mysqli_query($link, "CREATE TABLE IF NOT EXISTS `items` (
       `id` int(100) unsigned NOT NULL AUTO_INCREMENT,
@@ -35,38 +35,15 @@ $query = mysqli_query($link, "CREATE TABLE IF NOT EXISTS `users` (
     ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8");
 
 
-
-$query = mysqli_query($link, "INSERT INTO rush00.items (`name`, `type`, `typeof`, `description`, `price`, `img`) VALUES ('Shoe','Airforce', 'shoes', 'this shoe is an Airforce', 'R750', 'image/airforce.jpeg')");
-
-
-$query = mysqli_query($link, "INSERT INTO rush00.items (`name`, `type`, `typeof`, `description`, `price`, `img`) VALUES ()");
-
-
-$query = mysqli_query($link, "INSERT INTO rush00.items (`name`, `type`, `typeof`, `description`, `price`, `img`) VALUES ()");
-
-
-$query = mysqli_query($link, "INSERT INTO rush00.items (`name`, `type`, `typeof`, `description`, `price`, `img`) VALUES ()");
+$query = mysqli_query($link, " CREATE TABLE IF NOT EXISTS `products` (  
+  `id` int(11) NOT NULL AUTO_INCREMENT,  
+  `name` varchar(255) NOT NULL,  
+  `image` varchar(255) NOT NULL,  
+  `price` decimal(10,2) NOT NULL,  
+  PRIMARY KEY (`id`)  
+ ) ENGINE=MyISAM DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;");
 
 
 
-$query = mysqli_query($link, "INSERT INTO rush00.items (`name`, `type`, `typeof`, `description`, `price`, `img`) VALUES ()");
-
-
-
-$query = mysqli_query($link, "INSERT INTO rush00.items (`name`, `type`, `typeof`, `description`, `price`, `img`) VALUES ()");
-
-
-
-$query = mysqli_query($link, "INSERT INTO rush00.items (`name`, `type`, `typeof`, `description`, `price`, `img`) VALUES ()");
-
-
-
-$query = mysqli_query($link, "INSERT INTO rush00.items (`name`, `type`, `typeof`, `description`, `price`, `img`) VALUES ()");
-
-
-
-
-$query = mysqli_query($link, "INSERT INTO rush00.items (`name`, `type`, `typeof`, `description`, `price`, `img`) VALUES ()");
-
-
-$query = mysqli_query($link, "INSERT INTO rush00.items (`name`, `type`, `typeof`, `description`, `price`, `img`) VALUES ()");
+$query = mysqli_query($link, "INSERT INTO rush00.products (`id`, `name`, `image`, `price`) VALUES ('11', 'Test', 'p12.jpg', '240.00')");
+$query = mysqli_query($link, "INSERT INTO rush00.products (`id`, `name`, `image`, `price`) VALUES ('12', 'Sneaker', './image/p7.jpeg', '240.00');");
