@@ -16,10 +16,3 @@ article > p {
 strong {
     color: #9ACD32;
 }
-.logo > img {
-    width: 30%;
-    height: 30%;
-}
-.logo {
-    text-align: center;
-}
