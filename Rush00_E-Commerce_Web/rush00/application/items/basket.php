@@ -8,7 +8,7 @@
         exit();
     }
 
-    $link = mysqli_connect("localhost", "root", "81483465law", "rush00");
+    $link = mysqli_connect("localhost", "root", "123456789", "rush00");
 
     if (mysqli_connect_errno()) {
         printf("Connect failed: %s\n", mysqli_connect_error());
@@ -46,10 +46,10 @@
         {
             $count = count($_SESSION["cart"]);
             $item_array = array(
-            'product_id' => $_GET["id"],
-            'item_name' => $_POST["hidden_name"],
-            'product_price' => $_POST["hidden_price"],
-            'item_quantity' => $_POST["quantity"]
+                'product_id' => $_GET["id"],
+                'item_name' => $_POST["hidden_name"],
+                'product_price' => $_POST["hidden_price"],
+                'item_quantity' => $_POST["quantity"]
             );
             $_SESSION["cart"][$count] = $item_array;
             echo '<script>window.location="../../index.php"</script>';
@@ -63,12 +63,13 @@
     else
     {
         $item_array = array(
-        'product_id' => $_GET["id"],
-        'item_name' => $_POST["hidden_name"],
-        'product_price' => $_POST["hidden_price"],
-        'item_quantity' => $_POST["quantity"]
+            'product_id' => $_GET["id"],
+            'item_name' => $_POST["hidden_name"],
+            'product_price' => $_POST["hidden_price"],
+            'item_quantity' => $_POST["quantity"]
         );
         $_SESSION["cart"][0] = $item_array;
+        echo '<script>window.location="../../index.php"</script>';
     }
 }
 /* Also this */
@@ -83,9 +84,10 @@ if(isset($_GET["action"]))
                 unset($_SESSION["cart"][$keys]);
             }
         }
+        echo '<script>window.location="../../index.php?page=basket"</script>';
     }
 }
-
+    ?><legend style="font-weight: bold; text-align: center; color: #003559;">Basket</legend><?php
     /* $resLogQuery = mysqli_query($link, "SELECT * FROM `order` WHERE login='$login' AND `ordered`='0'"); */
     $query = "SELECT * FROM products ORDER BY id ASC";
     $result = mysqli_query($link, $query);
@@ -102,9 +104,9 @@ if(isset($_GET["action"]))
         echo "<tr>";
         echo "<td style='color: #003559; height: 70px; font-weight: bold'>" . $values["item_name"] . "</td>";
         echo "<td style='color: #003559; height: 70px; font-weight: bold'>" . $values["item_quantity"] . "</td>";
-        echo "<td style='color: #9ACD32; height: 70px;'>" . $values["product_price"] . " $</td>";
+        echo "<td style='color: #9ACD32; height: 70px;'R>" . $values["product_price"] . " </td>";
        /*  echo "<td><form method='post'><input type='hidden' name='hidden' value='$i'><input style='padding: 10px; margin-top: 10px;' type='submit' name='submit' value='Delete'></form></td>"; */
-       ?><td><a href="application/items/basket.php?action=delete&id=<?php echo $values["product_id"]; ?>"><span>remove</span></a></td></tr><?php
+       ?><td><a href="./application/items/basket.php?action=delete&id=<?php echo $values["product_id"]; ?>"><span>remove</span></a></td></tr><?php
         
        $total = $total + ($values["item_quantity"] * $values["product_price"]);
     }
@@ -137,7 +139,7 @@ if(isset($_GET["action"]))
     if (isset($_POST['order'])) {
         if ($_POST['order'] == 'Order') {
             if (!$_SESSION['loggued_on_user']) {
-                header("location: ../../index.php?page=login");
+                header("location: ./index.php?page=login");
             } else {
                 mysqli_query($link, "UPDATE `order` SET ordered = '1' WHERE login='$login' AND ordered='0'");
                 echo "<div><h2 style='color: green'>Your order has been sent</h2></div>";

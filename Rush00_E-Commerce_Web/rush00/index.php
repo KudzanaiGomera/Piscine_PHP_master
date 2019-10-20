@@ -37,7 +37,7 @@
         $login = $_SESSION['loggued_on_user'];
     }
 
-    $link = mysqli_connect("localhost", "root", "81483465law", "rush00");
+    $link = mysqli_connect("localhost", "root", "123456789", "rush00");
 
     if (mysqli_connect_errno()) {
         try {
@@ -74,7 +74,7 @@
     <body>
         <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
             <div class="container">
-                    <a href="rush00/index.php" class="navbar-brand" id="text">Wild & Free Clothing</a>
+                    <a href="index.php" class="navbar-brand" id="text">Wild & Free Clothing</a>
                          <ul class="navbar navbar-nav">
                             <li><a href="index.php?page=basket">Basket<?php if ($order) {echo "(".$order.")";}?></a></li>
                          <!--Drop Down Menu-->

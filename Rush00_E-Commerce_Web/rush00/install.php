@@ -1,9 +1,9 @@
 <?php
-$link = mysqli_connect("localhost", "root", "81483465law");
+$link = mysqli_connect("localhost", "root", "123456789");
 
 $query = mysqli_query($link, "CREATE DATABASE IF NOT EXISTS rush00");
 
-$link = mysqli_connect("localhost", "root", "81483465law", "rush00");
+$link = mysqli_connect("localhost", "root", "123456789", "rush00");
 
 $queryItems = mysqli_query($link, "CREATE TABLE IF NOT EXISTS `items` (
       `id` int(100) unsigned NOT NULL AUTO_INCREMENT,
@@ -45,5 +45,8 @@ $query = mysqli_query($link, " CREATE TABLE IF NOT EXISTS `products` (
 
 
 
-$query = mysqli_query($link, "INSERT INTO rush00.products (`id`, `name`, `image`, `price`) VALUES ('11', 'Test', 'p12.jpg', '240.00')");
-$query = mysqli_query($link, "INSERT INTO rush00.products (`id`, `name`, `image`, `price`) VALUES ('12', 'Sneaker', './image/p7.jpeg', '240.00');");
+
+$query = mysqli_query($link, "INSERT INTO rush00.products (`id`, `name`, `image`, `price`) VALUES ('13', 'Hoody', './image/p12.jpg', '260.00');");
+$query = mysqli_query($link, "INSERT INTO rush00.products (`id`, `name`, `image`, `price`) VALUES ('14', 'Boots', './image/boots.jpg', '1300.00');");
+$query = mysqli_query($link, "INSERT INTO rush00.products (`id`, `name`, `image`, `price`) VALUES ('15', 'jean', './image/p2.jpg', '
+300.00');");
