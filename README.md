@@ -1,2 +1,3 @@
 # PHP_bootcamp
-php,css,html,
+php,css,html,javascript
+MVC model, OOP
